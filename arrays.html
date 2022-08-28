@@ -21,6 +21,36 @@
 
         }
         console.log(employee)// there should be no semicolon.
+
+
+        /*{name: 'Anjali', Salary: 100, Post: 'full stack web developer'}
+           Post: "full stack web developer"
+            Salary: 100
+            name: "Anjali"
+            [[Prototype]]: Object */
+        
+
+
+        let names=[110,21,3,"Anjali",undefined]
+        console.log(names)
+        /*[1, 2, 3, 'Anjali', undefined]
+        0: 11: 22: 33: "Anjali"4: undefinedlength: 5[[Prototype]]: Array(0) */
+
+
+
+        let fun=new Array(110,25,13,"Anjali",undefined)
+        console.log(fun)
+       /*[1, 2, 3, 'Anjali', undefined]
+        0: 11: 22: 33: "Anjali"4: undefinedlength: 5[[Prototype]]: Array(0)   ---------> Here in this case this will behave as the object not an array just like java new key word is used to make the object and
+        Array is used  that object is used as array type.*/
+
+        names=names.sort();//to sort the array.
+        console.log(names);
+        console.log(fun.length)// to print the length of the array.
+
+        names.push("Anjali kumari")
+        console.log(names);
+        
     </script>
 </body>
 </html>
