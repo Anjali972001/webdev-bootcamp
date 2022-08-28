@@ -1,5 +1,5 @@
 # webdev-bootcamp
-java Script only
+java Script and Html only
 
 
 
