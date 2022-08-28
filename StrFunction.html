@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // to print the string
+    var str="This is a String.";
+    console.log(str);
+    
+    //to print the first index of that is found in the string
+    var position=str.indexOf("is");
+    console.log(position);
+
+    //to get the last index...
+    position =str.lastIndexOf("is");
+    console.log(position);
+
+    // to do slicing...
+    // it can also accept the negative value.
+    var substring=str.slice(1,6);
+    console.log(substring);
+
+     // using this actual string will not change. 
+    var replaced=str.replace('String','Anjali Kumari');
+    console.log(replaced);
+
+    // to actually get the string in the upper case.
+    console.log(str.toUpperCase());
+    // to get the string in the lower case.
+    console.log(str.toLowerCase());
+    // to add something in the string we use concat method
+    var newString=str.concat("I am in third year.");
+    console.log(newString);
+    //this function is used to trim the white spaces that in the startin and in the ending from the string.
+    var str1="   this contain     many white spaces        .   ";
+    console.log(str1.trim());
+    // to return the character of the string.
+    var char=str.charAt(2);
+    console.log(char);
+
+    console.log(str[2]);
+</script>
+</html>
