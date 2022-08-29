@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert,Prompt,confirm</title>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, recusandae ratione esse aspernatur accusantium ipsam. Ex facilis laboriosam sit, unde fuga amet praesentium?
+    </div>
+    <script>
+        // alert in browser in javaScript.
+        alert("This is a message.")
+        // using this function alert a modal window opens.
+        // this does not return any thing
+
+        // prompt in the browser.
+        let name=prompt("What is your name ?", "Guest")
+        console.log(name);
+
+        let del=confirm("DO you really want to delete this post...");
+         //console.log(del);
+        if(del){
+            console.log("Your post has been deleted successfully.");
+
+        }
+        else{
+            console.log("Your post is not deleted.")
+        }
+
+        // Task(Asignment)
+        let age=prompt("what is your age?");
+        if(age>18)
+        {
+          console.log("Your are eligible.")
+        }
+        else{
+            console.log("You are not eligible.")
+        }
+       
+
+    </script>
+</body>
+</html>
