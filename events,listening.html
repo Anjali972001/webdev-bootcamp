@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn
+        {
+            padding: 10px 14px;
+            color: rgba(218, 19, 19, 0.973);
+            border: 2px solid black;
+            border-radius: 9px;
+            font-weight:bold ;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is my Heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque harum cupiditate vero sed pariatur sunt ut, aut esse, dolore quia dolorem. Enim ipsa voluptas nobis aspernatur voluptatum! Veniam aut totam dolorum, non, adipisci architecto provident esse nesciunt expedita blanditiis repellat earum deleniti. Nihil ut doloremque quia voluptas fugit dolore eius quasi, minus cum perferendis eveniet magni accusantium reprehenderit dolorum assumenda blanditiis fuga voluptatibus? Commodi architecto veritatis consequuntur nam veniam quis minima sed nemo autem, similique expedita! Veniam inventore ducimus quibusdam molestias consectetur laboriosam mollitia enim illum quos! Porro deserunt quo expedita, maiores ad delectus magni incidunt officia repudiandae qui quas voluptates eum explicabo maxime ipsa dolor recusandae culpa consequuntur laudantium modi velit. </p>Eum consequuntur voluptas alias pariatur debitis quod amet, voluptatem, quo, laborum iusto tenetur quia aliquid. Culpa consequuntur totam alias. Rem consequuntur quidem vitae dolorem voluptatum voluptatem, maiores possimus fuga? Quo tempora laborum quisquam nihil ipsum totam ducimus praesentium! Dolor velit nulla quaerat dicta rem optio itaque unde quas perspiciatis nobis, inventore aspernatur modi qui, repellendus fugiat commodi ipsum impedit sit sint, necessitatibus quod nisi tenetur? Eligendi labore quisquam dolorum culpa sunt atque nihil eveniet nostrum, reiciendis, vero deleniti, aspernatur sequi deserunt dignissimos? Delectus provident illum, laborum sit accusantium, deserunt eveniet vero cum reiciendis quam dolorum sunt consectetur ut amet corporis ex voluptatibus voluptatem natus architecto itaque debitis dolores? Ex consequatur ullam quam, iste nisi cumque doloribus temporibus beatae iure ab. Aperiam?</p>
+    
+    </div>
+    <button id="btn" onclick="hide()">Show/hide</button>
+    
+    <script>
+         let para=document.getElementById('para');
+         para.addEventListener('mouseover',function run()
+         {
+            alert('mouse inside')
+         });
+         para.addEventListener('mouseout',function run()
+         {
+            alert('mouse outside')
+         });
+         
+
+         
+        // using this function we can show and hide the content 
+        function hide()
+        {
+         
+            
+            let btn=document.getElementById('btn') ;
+          if(para.style.display !='none')
+          {
+            para.style.display='none';// for hiding the content
+          }
+          else
+          {
+              para.style.display='block';
+              // the content is hiding then in that case this line will show the content.
+          }
+          
+
+        }
+    </script>
+</body>
+</html>
