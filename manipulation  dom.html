@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation DOM</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>CONTACT US</li>
+            <li>OUR SERVICES</li>
+            <li>READ MORE</li>
+        </ul>
+        
+    </div>
+    <script>
+        let main=document.getElementById('main');// using id we can get the things inside that
+        console.log(main);
+        let nav=document.getElementById('nav');
+        console.log(nav);
+
+        let name=document.getElementByClassName('container');
+        console.log(name)
+        
+    </script>
+
+</body>
+</html>

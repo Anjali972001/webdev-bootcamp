@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+        
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>OUR SERVICE</li>
+            <li>CONTACT US</li>
+            <li>KNOW MORE ABOUT US</li>
+        </ul>
+    </div>
+     <script>
+         let main = document.getElementById('main');
+        console.log(main);// to get the element by its unique id
+        let nav=document.getElementById('nav');
+        console.log(nav);
+
+
+        // to get the element by class
+        let container=document.getElementsByClassName('container')
+        console.log(container);
+
+
+        // using query selector(it is used for selecting only first element from the code)
+        let sel=document.querySelector('#nav>li');
+        console.log("Selector returns ",sel);
+
+        // using the querySelectorAll
+        let sel1=document.querySelectorAll('#nav>li');
+        console.log(sel1);
+     </script>
+       
+
+    
+</body>
+</html>
