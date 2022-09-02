@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and SetTimeOut</title>
+</head>
+<body>
+    <script>
+        console.log("this is tutorial of SetInterval and setTimeOut");
+        // setTimeOut allows us to run the function once the interval of time.
+        //clearTimeOut allows us to run the function repeatedly  after the interval of time.
+        function greet(name,advise)
+        {
+            console.log("Hello,good Morning"+ name +" "+advise);
+        }
+        greet();
+
+        setTimeout(greet, 6000,"Harr","and take care and study well");
+        // in this the function is passed and the time is passed 
+
+
+
+        
+    </script>
+</body>
+</html>
